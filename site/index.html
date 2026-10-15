@@ -9,7 +9,7 @@
 <meta property="og:url" content="https://pawloka.com/">
 <meta property="og:title" content="Pawloka - your clinic's front desk on WhatsApp">
 <meta property="og:description" content="Books appointments, chases boosters and no-shows, and hands anything medical to your team.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 2c5 0 9 3.6 9 8.4V22c0 4.4-4 8-9 8s-9-3.6-9-8V10.4C7 5.6 11 2 16 2z' fill='%231D5C55'/%3E%3Ccircle cx='16' cy='8.5' r='2.4' fill='%23F4F7F5'/%3E%3Cpath d='M11.5 18.5h9' stroke='%23E9A321' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 2c5 0 9 3.6 9 8.4V22c0 4.4-4 8-9 8s-9-3.6-9-8V10.4C7 5.6 11 2 16 2z' fill='%2308756F'/%3E%3Ccircle cx='16' cy='8.5' r='2.4' fill='%23FFFBF4'/%3E%3Cpath d='M11.5 18.5h9' stroke='%23FFB627' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Young+Serif&display=swap">
@@ -18,31 +18,41 @@
    then the jobs it takes off the desk, the safety rules, the staff inbox,
    the shared record, and the pilot sign-up. */
 :root {
-  --paper: #F4F7F5;
+  --paper: #FFFBF4;
   --surface: #FFFFFF;
-  --sunk: #E9EFEC;
-  --ink: #10282C;
-  --muted: #4E6468;
-  --line: #D3DEDA;
-  --spruce: #1D5C55;
-  --spruce-soft: #DCEBE7;
-  --marigold: #E9A321;
-  --marigold-soft: #FBEBC8;
-  --on-marigold: #10282C;
-  --alert: #B4410F;
-  --alert-soft: #FBE3D6;
+  --sunk: #FFF3E2;
+  --ink: #1F2340;
+  --muted: #555A77;
+  --line: #F2E2CB;
+  --spruce: #08756F;
+  --spruce-soft: #DDF6F0;
+  --marigold: #FFB627;
+  --marigold-soft: #FFEBB8;
+  --on-marigold: #1F2340;
+  --coral: #C93C2E;
+  --coral-bright: #FF6B5B;
+  --coral-soft: #FFE5DE;
+  --sky: #2F9BE0;
+  --alert: #C2410C;
+  --alert-soft: #FFE6DC;
+
+  /* Section backgrounds */
+  --tint-mint: #E4F7F1;
+  --tint-sky: #E3F2FF;
+  --tint-peach: #FFEDE3;
+  --tint-sun: #FFF4D2;
 
   --chat-bg: #EFEAE2;
-  --chat-head: #1D5C55;
+  --chat-head: #08756F;
   --chat-head-fg: #FFFFFF;
   --bubble-in: #FFFFFF;
   --bubble-out: #D9FDD3;
   --chat-ink: #111B21;
   --chat-meta: #667781;
   --tick: #53BDEB;
-  --device: #10282C;
-  --card-paper: #FFF8E7;
-  --card-line: #E4D6B4;
+  --device: #1F2340;
+  --card-paper: #FFF6DE;
+  --card-line: #F0D9A6;
 
   --font-display: "Young Serif", "Iowan Old Style", Georgia, serif;
   --font-body: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -61,19 +71,27 @@
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --paper: #0D191B;
-    --surface: #142427;
-    --sunk: #102023;
-    --ink: #E5EEEB;
-    --muted: #9DB1AF;
-    --line: #26393C;
-    --spruce: #74C7B8;
-    --spruce-soft: #17332F;
-    --marigold: #F2B33D;
-    --marigold-soft: #3A2D12;
-    --on-marigold: #10282C;
+    --paper: #13182B;
+    --surface: #1B2139;
+    --sunk: #171C31;
+    --ink: #EEF1F8;
+    --muted: #A9B0C8;
+    --line: #2C3452;
+    --spruce: #5DD3C4;
+    --spruce-soft: #173A3B;
+    --marigold: #FFC23D;
+    --marigold-soft: #3D3015;
+    --on-marigold: #1F2340;
+    --coral: #FF8A7A;
+    --coral-bright: #FF8A7A;
+    --coral-soft: #3E2226;
+    --sky: #6CC0F5;
     --alert: #FB9A63;
     --alert-soft: #3B2216;
+    --tint-mint: #142F31;
+    --tint-sky: #16263F;
+    --tint-peach: #2F2228;
+    --tint-sun: #2E2A18;
     --chat-bg: #0B141A;
     --chat-head: #1F2C33;
     --chat-head-fg: #E9EDEF;
@@ -82,26 +100,34 @@
     --chat-ink: #E9EDEF;
     --chat-meta: #8696A0;
     --tick: #53BDEB;
-    --device: #24363A;
+    --device: #2A3150;
     --card-paper: #2A261C;
     --card-line: #4A4232;
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --paper: #0D191B;
-  --surface: #142427;
-  --sunk: #102023;
-  --ink: #E5EEEB;
-  --muted: #9DB1AF;
-  --line: #26393C;
-  --spruce: #74C7B8;
-  --spruce-soft: #17332F;
-  --marigold: #F2B33D;
-  --marigold-soft: #3A2D12;
-  --on-marigold: #10282C;
+  --paper: #13182B;
+  --surface: #1B2139;
+  --sunk: #171C31;
+  --ink: #EEF1F8;
+  --muted: #A9B0C8;
+  --line: #2C3452;
+  --spruce: #5DD3C4;
+  --spruce-soft: #173A3B;
+  --marigold: #FFC23D;
+  --marigold-soft: #3D3015;
+  --on-marigold: #1F2340;
+  --coral: #FF8A7A;
+  --coral-bright: #FF8A7A;
+  --coral-soft: #3E2226;
+  --sky: #6CC0F5;
   --alert: #FB9A63;
   --alert-soft: #3B2216;
+  --tint-mint: #142F31;
+  --tint-sky: #16263F;
+  --tint-peach: #2F2228;
+  --tint-sun: #2E2A18;
   --chat-bg: #0B141A;
   --chat-head: #1F2C33;
   --chat-head-fg: #E9EDEF;
@@ -110,7 +136,7 @@
   --chat-ink: #E9EDEF;
   --chat-meta: #8696A0;
   --tick: #53BDEB;
-  --device: #24363A;
+  --device: #2A3150;
   --card-paper: #2A261C;
   --card-line: #4A4232;
   color-scheme: dark;
@@ -146,15 +172,21 @@ p { margin: 0; }
 .section-head { display: grid; gap: 14px; max-width: 46rem; margin-bottom: clamp(32px, 5vw, 56px); }
 .section-head p { color: var(--muted); font-size: var(--step-1); line-height: 1.55; }
 .eyebrow {
+  justify-self: start;
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 5px 12px; border-radius: 999px;
+  background: var(--surface);
+  box-shadow: 0 0 0 1px var(--line);
   font-family: var(--font-mono);
   font-size: var(--step--1);
   font-weight: 500;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--spruce);
+  color: var(--coral);
 }
+.eyebrow::before { content: ""; flex: none; width: 8px; height: 8px; border-radius: 50%; background: var(--coral-bright); }
 .mark {
-  background: linear-gradient(transparent 62%, var(--marigold-soft) 62%);
+  background: linear-gradient(transparent 58%, color-mix(in srgb, var(--marigold) 55%, transparent) 58%);
   padding-inline: 0.06em;
 }
 
@@ -168,9 +200,12 @@ p { margin: 0; }
   transition: transform .15s ease, background-color .15s ease;
 }
 .btn:hover { transform: translateY(-1px); }
-.btn-primary { background: var(--marigold); color: var(--on-marigold); }
+.btn-primary {
+  background: var(--marigold); color: var(--on-marigold);
+  box-shadow: 0 8px 20px -10px color-mix(in srgb, var(--marigold) 90%, var(--ink));
+}
 .btn-primary:hover { background: color-mix(in srgb, var(--marigold) 88%, var(--ink)); }
-.btn-ghost { border-color: var(--line); color: var(--ink); background: transparent; }
+.btn-ghost { border-color: var(--line); color: var(--ink); background: var(--surface); }
 .btn-ghost:hover { border-color: var(--ink); }
 
 /* Nav */
@@ -194,11 +229,33 @@ p { margin: 0; }
   .nav .btn { margin-left: auto; }
 }
 
-/* Hero */
-.hero { position: relative; overflow: hidden; padding-block: clamp(40px, 7vw, 88px) clamp(128px, 13vw, 168px); }
+/* Hero: a looping video of real pets sits behind the copy and the chat. A
+   paper-coloured wash on the left keeps the headline readable. */
+.hero { position: relative; overflow: hidden; isolation: isolate; padding-block: clamp(48px, 8vw, 104px); }
 .hero > .wrap { position: relative; z-index: 1; }
+.hero-media { position: absolute; inset: 0; z-index: 0; background: var(--sunk) url("media/pets-hero.jpg") center / cover no-repeat; }
+.hero-media video { display: block; width: 100%; height: 100%; object-fit: cover; }
+.hero-media::after {
+  content: ""; position: absolute; inset: 0;
+  background:
+    linear-gradient(100deg,
+      color-mix(in srgb, var(--paper) 95%, transparent) 0%,
+      color-mix(in srgb, var(--paper) 88%, transparent) 36%,
+      color-mix(in srgb, var(--paper) 30%, transparent) 54%,
+      transparent 68%),
+    linear-gradient(to top, var(--paper) 0, transparent 96px);
+}
+.media-toggle {
+  position: absolute; right: var(--gutter); bottom: 24px; z-index: 2;
+  display: grid; place-items: center; width: 40px; height: 40px;
+  border-radius: 50%; border: 1px solid var(--line);
+  background: color-mix(in srgb, var(--surface) 88%, transparent); color: var(--ink);
+  cursor: pointer;
+}
+.media-toggle:hover { background: var(--surface); }
+.media-toggle .i-play, .media-toggle[aria-pressed="true"] .i-pause { display: none; }
+.media-toggle[aria-pressed="true"] .i-play { display: block; }
 .pets { display: block; width: 100%; pointer-events: none; }
-.hero .pets { position: absolute; left: 0; bottom: 0; height: 140px; z-index: 0; }
 .footer .pets { height: 104px; }
 .hero-grid { display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr); gap: clamp(40px, 6vw, 80px); align-items: center; }
 .hero-copy { display: grid; gap: 24px; min-width: 0; }
@@ -213,6 +270,11 @@ p { margin: 0; }
 .hero-note span::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--spruce); }
 @media (max-width: 900px) {
   .hero-grid { grid-template-columns: 1fr; }
+  /* The video becomes a band across the top and fades into the copy. */
+  .hero { --media-h: clamp(240px, 62vw, 420px); padding-top: calc(var(--media-h) - 56px); }
+  .hero-media { bottom: auto; height: var(--media-h); }
+  .hero-media::after { background: linear-gradient(to top, var(--paper) 0, color-mix(in srgb, var(--paper) 0%, transparent) 45%); }
+  .media-toggle { top: 16px; bottom: auto; }
 }
 
 /* Phone */
@@ -231,7 +293,7 @@ p { margin: 0; }
   border: 10px solid var(--device); border-radius: 40px;
   background: var(--chat-bg);
   overflow: hidden;
-  box-shadow: 0 30px 60px -30px color-mix(in srgb, var(--ink) 45%, transparent);
+  box-shadow: 0 30px 60px -24px color-mix(in srgb, var(--ink) 55%, transparent);
 }
 .chat-head {
   display: flex; align-items: center; gap: 10px;
@@ -336,7 +398,10 @@ p { margin: 0; }
 
 /* Jobs */
 .jobs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px 36px; }
-.job { display: grid; gap: 10px; align-content: start; padding-top: 22px; border-top: 1.5px solid var(--ink); min-width: 0; }
+.job { display: grid; gap: 10px; align-content: start; padding-top: 22px; border-top: 4px solid var(--coral-bright); min-width: 0; }
+.job:nth-child(4n+2), .rx-rules div:nth-child(4n+2) { border-top-color: var(--marigold); }
+.job:nth-child(4n+3), .rx-rules div:nth-child(4n+3) { border-top-color: var(--spruce); }
+.job:nth-child(4n+4), .rx-rules div:nth-child(4n+4) { border-top-color: var(--sky); }
 .job p { color: var(--muted); }
 .cadence { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 6px; }
 .cadence span {
@@ -351,7 +416,10 @@ p { margin: 0; }
 @media (max-width: 600px) { .jobs { grid-template-columns: 1fr; } }
 
 /* Safety */
-.band { background: var(--surface); border-block: 1px solid var(--line); }
+.band { background: var(--tint-mint); }
+#safety.band { background: var(--tint-sky); }
+#record.band { background: var(--tint-peach); }
+#pilot.band { background: var(--tint-sun); }
 .rules { display: grid; border-top: 1px solid var(--line); }
 .rule {
   display: grid; grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.25fr) 132px;
@@ -504,7 +572,8 @@ p { margin: 0; }
 .steps li::before {
   content: counter(step); grid-row: span 2;
   display: grid; place-items: center; width: 36px; height: 36px; border-radius: 50%;
-  border: 1.5px solid var(--ink); font-family: var(--font-mono); font-size: 0.875rem;
+  background: var(--marigold); color: var(--on-marigold);
+  font-family: var(--font-mono); font-size: 0.875rem; font-weight: 500;
 }
 .steps p { color: var(--muted); }
 .chat-card {
@@ -527,7 +596,7 @@ p { margin: 0; }
 .sellers small { grid-column: 2 / -1; color: var(--chat-meta); font-size: 0.75rem; }
 .paylink { color: var(--tick); text-decoration: underline; text-underline-offset: 2px; }
 .rx-rules { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 32px; margin-top: clamp(40px, 6vw, 64px); }
-.rx-rules div { display: grid; gap: 6px; align-content: start; padding-top: 18px; border-top: 1.5px solid var(--ink); min-width: 0; }
+.rx-rules div { display: grid; gap: 6px; align-content: start; padding-top: 18px; border-top: 4px solid var(--coral-bright); min-width: 0; }
 .rx-rules p { color: var(--muted); font-size: 0.9375rem; }
 @media (max-width: 960px) { .rx-rules { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 560px) { .rx-rules { grid-template-columns: 1fr; } }
@@ -576,7 +645,7 @@ p { margin: 0; }
 .faq details p { padding-bottom: 22px; color: var(--muted); max-width: 44rem; }
 
 /* Footer */
-.footer { border-top: 1px solid var(--line); padding-block: 0 40px; }
+.footer { background: var(--tint-mint); padding-block: 0 40px; }
 .footer-inner { display: flex; flex-wrap: wrap; gap: 16px 32px; align-items: center; justify-content: space-between; }
 .footer p { color: var(--muted); font-size: 0.875rem; }
 </style>
@@ -648,7 +717,16 @@ p { margin: 0; }
         </div>
       </div>
     </div>
-    <canvas class="pets" data-pets="hero" aria-hidden="true"></canvas>
+    <div class="hero-media" aria-hidden="true">
+      <video muted loop playsinline preload="none" poster="media/pets-hero.jpg">
+        <source data-src="media/pets-hero.webm" type="video/webm">
+        <source data-src="media/pets-hero.mp4" type="video/mp4">
+      </video>
+    </div>
+    <button class="media-toggle" type="button" aria-pressed="false" aria-label="Pause background video" hidden>
+      <svg class="i-pause" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><rect x="2" y="1" width="3.5" height="12" rx="1" fill="currentColor"/><rect x="8.5" y="1" width="3.5" height="12" rx="1" fill="currentColor"/></svg>
+      <svg class="i-play" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 1.5v11a.8.8 0 0 0 1.2.7l9-5.5a.8.8 0 0 0 0-1.4l-9-5.5A.8.8 0 0 0 3 1.5z" fill="currentColor"/></svg>
+    </button>
   </section>
 
   <section class="section band" id="for">
@@ -1155,6 +1233,31 @@ p { margin: 0; }
 })();
 
 (function () {
+  // The hero video loads only when the visitor hasn't asked for reduced motion
+  // or data saving; otherwise the poster frame stays as a still background.
+  var video = document.querySelector(".hero-media video");
+  var toggle = document.querySelector(".media-toggle");
+  if (!video || !toggle) return;
+  var reduceMotion = false, saveData = false;
+  try { reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches; } catch (e) {}
+  try { saveData = !!(navigator.connection && navigator.connection.saveData); } catch (e) {}
+  if (reduceMotion || saveData) return;
+  Array.prototype.forEach.call(video.querySelectorAll("source[data-src]"), function (source) {
+    source.src = source.getAttribute("data-src");
+  });
+  video.load();
+  function setPaused(paused) {
+    toggle.setAttribute("aria-pressed", paused ? "true" : "false");
+    toggle.setAttribute("aria-label", paused ? "Play background video" : "Pause background video");
+  }
+  var started = video.play();
+  if (started && started.catch) started.catch(function () { setPaused(true); });
+  toggle.hidden = false;
+  toggle.addEventListener("click", function () {
+    if (video.paused) { video.play(); setPaused(false); } else { video.pause(); setPaused(true); }
+  });
+})();
+(function () {
   var tabs = Array.prototype.slice.call(document.querySelectorAll('[role="tab"]'));
   if (!tabs.length) return;
 
@@ -1204,14 +1307,10 @@ p { margin: 0; }
   }
 
   var CASTS = {
-    hero: [
-      { kind: "dog", size: 1, speed: 1.5, at: 0.12 },
-      { kind: "pup", size: 0.66, speed: 1.75, at: 0.48, ball: true },
-      { kind: "cat", size: 0.8, speed: 1.3, at: 0.8 }
-    ],
     footer: [
-      { kind: "cat", size: 0.72, speed: 1.2, at: 0.25 },
-      { kind: "dog", size: 0.85, speed: 1.45, at: 0.68 }
+      { kind: "cat", size: 0.72, speed: 1.2, at: 0.2 },
+      { kind: "pup", size: 0.6, speed: 1.75, at: 0.5, ball: true },
+      { kind: "dog", size: 0.85, speed: 1.45, at: 0.78 }
     ]
   };
   var TAU = Math.PI * 2;
@@ -1290,7 +1389,7 @@ p { margin: 0; }
     this.ctx = canvas.getContext("2d");
     this.layer = document.createElement("canvas");
     this.lctx = this.layer.getContext("2d");
-    this.cast = CASTS[canvas.getAttribute("data-pets")] || CASTS.hero;
+    this.cast = CASTS[canvas.getAttribute("data-pets")] || CASTS.footer;
     this.pets = [];
     this.prints = [];
     this.visible = true;

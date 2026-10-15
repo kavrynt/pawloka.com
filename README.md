@@ -18,6 +18,13 @@ check but don't deploy.
 
 Make changes on a `feature/<name>` branch and open a pull request into `main`.
 
+## Hero video
+
+`site/media/pets-hero.webm` and `pets-hero.mp4` are one 24-second loop cut from four
+[Mixkit](https://mixkit.co/) clips under the Mixkit Stock Video Free License (ids 101229,
+4103, 101218 and 22732). `pets-hero.jpg` is its poster frame. The video only loads when the
+visitor hasn't turned on reduced motion or data saving, and it has a pause button.
+
 ## Sign-up form
 
 The form posts JSON to the URL in its `data-endpoint` attribute. While that attribute is
