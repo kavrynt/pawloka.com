@@ -1,7 +1,9 @@
 # pawloka.com
 
-The marketing site for [Pawloka](https://pawloka.com/), a WhatsApp front desk for vet
-clinics. It's a single static page, `site/index.html`, with inline CSS and a few lines of
+The marketing site for [Pawloka](https://pawloka.com/), a clinic suite for vets built on one
+health record per pet, with a WhatsApp front desk for clients. What the page claims as live,
+building, next or later follows the product docs in `kavrynt/pawloka-cloud` (the platform HLD,
+the roadmap and ADR 0016 for the Basic and AI plans); update both together. It's a single static page, `site/index.html`, with inline CSS and a few lines of
 JavaScript. There's no build step, and the only outside dependency is Google Fonts.
 
 ## Preview locally
@@ -28,7 +30,8 @@ visitor hasn't turned on reduced motion or data saving, and it has a pause butto
 ## Sign-up form
 
 The form posts JSON to the URL in its `data-endpoint` attribute. While that attribute is
-empty, the form tells visitors it isn't connected yet and sends nothing.
+empty, the form tells visitors it isn't connected yet and sends nothing. Clinics also send
+`vets`, `plan` (`not-sure`, `basic` or `ai`) and an optional `software`; other roles don't.
 
 ## Licence
 
